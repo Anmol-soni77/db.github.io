@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{tittle}</title>
+    style
+      include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="/">home</a> </li>
+            <li> <a href="/">about</a> </li>
+            <li> <a href="/">contactus</a> </li>
+            <li> <a href="/">services</a> </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Know Your Friends </h1>
+        <form action="/" method="post">
+            <input type="text" placeholder="Enter your name" name="name" id="name">
+            <input type="text" placeholder="Enter your age" name="age" id="age">
+            <input type="text" placeholder="Enter your Enrollment no." name="enroll" id="enroll">
+            select#institute(name="institute" )
+                option(value="select your institute") select your institute
+                option(value="MITS,gwalior") MITS,gwalior
+                option(value="LNCT,bhopal") LNCT,bhopal
+                option(value="Oriental,bhopal") Oriental,bhopal
+                option(value="JUET,guna") JUET,guna
+                option(value="BSSS,bhopal") BSSS,bhopal
+            select#interests(name="interests" )
+                option(value="select your interests") select your interests
+                option(value="watch anime,movies") watch anime,movies
+                option(value="play sports") play sports
+                option(value="just go out and hangout") just go out and hangout
+                option(value="spend time with your loved once") spend time with your loved once
+            <textarea name="more" id="more" cols="30" rows="7" placeholder="Enter more about you"></textarea>
+            <button id="btn">Submit</button>
+        </form>
+        div#output
+    //- script 
+        //- include ../static/script2.js
+        //- include ../app.js
+    </div>
+</body>
+</html>
